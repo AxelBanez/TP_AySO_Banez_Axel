@@ -2,7 +2,7 @@
 TP del Primer Parcial de Arquitectura y Sistemas Operativos
 
 Alumno: Axel  
-Division: 114 
-Turno: Mañana
+Division: 114  
+Turno: Mañana  
 
  
