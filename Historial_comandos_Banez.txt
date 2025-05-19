@@ -1,0 +1,380 @@
+ls
+cd repogit/
+ls
+cd ..
+ssh-keygen -t ed25519
+ls -l .ssh/
+sudo systemctl status sshd
+cat .ssh/id_ed25519.pub
+git clone git@github.com:AxelBanez/vmvagrant_repo.git
+ls
+ls ~/.ssh
+cat .ssh/id_ed25519.pub 
+git clone git@github.com:AxelBanez/vmvagrant_repo.git
+ls
+cd vmvagrant_repo/
+ls
+history > historial,txt
+ls
+archivo1.txt
+git status
+git add .
+git status
+git commit -m "commit clase2"
+git config --global user.email "banezaxeloscco@gmail.com"
+git config --global user.name "AxelBanez"
+git commit -m "commit clase2"
+git push
+exit
+pwd
+echo hola
+echo $HOME
+ls
+ls -l
+cat README 
+mkdir clase4
+ls -l
+cd clase4/
+pwd
+cat > texto1.txt
+ls -l
+cat texto1.txt 
+cat << FIN > texto2.txt
+linea 4
+linea 5
+linea 6
+FIN
+
+ls -l
+cat texto2.txt 
+cat *.txt
+cat texto1.txt >> texto2.txt 
+cat texto2.txt 
+ls -l
+cat << EOF > texto3.txt
+linea 7
+linea 8
+linea 9
+EOF
+
+cat texto1.txt texto3.txt > texto4.txt
+ls -l
+cat texto4.txt 
+echo hola
+echo hola > hola.txt
+ls -l
+cat hola.txt 
+echo chau
+echo chau >> hola.txt
+cat hola.txt 
+man grep
+grep chau hola.txt
+grep CHAU hola.txt
+grep -i CHAU hola.txt
+grep -i ChaU hola.txt
+cat texto4.txt 
+grep 7 texto4.txt 
+grep 7 texto4.txt > filtro7.txt
+ls -l
+cat filtro7.txt 
+grep 8 texto4.txt
+grep 8 texto4.txt > texto1.txt 
+ls -l
+cat texto1.txt 
+history
+history > mi_historial.txt
+ls -l
+cat mi_historial.txt 
+grep 8 texto4.txt > texto1.txt 
+grep 8 texto4.txt
+grep -v 8 texto4.txt
+grep -c 8 texto4.txt
+grep -c linea texto4.txt
+grep -n 8 texto4.txt
+cd ..
+pwd
+tree
+apt install tree
+sudo apt install tree
+sudo snap install tree
+tree 
+pwd
+cd clase4/
+pwd
+touch texto5.txt
+ls -l
+cp texto2.txt texto_2cp.txt
+ls -l
+cat texto2.txt 
+cat texto_2cp.txt 
+mv texto_2cp.txt textocp2.txt
+ls -l
+mv mi_historial.txt /home/vagrant/
+ls -l
+ls -l /home/vagrant/
+cd ..
+rm clase4/
+ls - l
+ls -l
+rm -r clase4/
+ls -l
+whoami
+id
+w
+pwd
+cd ..
+ls -l
+cd vagrant/
+ls
+pwd
+mkdir -p {clase1,clase2}/{teoria,practica}
+tree 
+mkdir -p {compra1/vendedor{1..3},compra2/{vendedor{1..3},repositor}}
+ls -l
+tree 
+cat /etc/passwd
+cat /etc/group
+cat /etc/shadow
+sudo cat /etc/shadow
+groupadd Alumnos
+sudo groupadd Alumnos
+cat /etc/group
+useradd  -m -s /bin/bash -c "Alumno Axel" -G Alumnos Axel
+sudo useradd  -m -s /bin/bash -c "Alumno Axel" -G Alumnos Axel
+cat /etc/passwd
+cat /etc/group
+passwd Axel
+sudo passwd Axel
+su Axel
+su - pepe
+su - Axel
+w
+pwd
+history > historial_clase4.txt
+ls -l
+cat mi_historial.txt 
+cat historial_clase4.txt 
+exit
+ls -l
+mkdir clase5
+ls -l
+cd clase5/
+ls -l
+echo hola
+echo hola > texto1.txt
+cat texto1.txt 
+ls -l
+chmod 666 texto1.txt 
+ls -l
+chmod 764 texto1.txt 
+ls -l
+echo chau > texto2.txt
+ls -l
+chmod 644 texto2.txt 
+ls -l
+cd ..
+ls -l
+chmod -R 777 clase5/
+ls -l
+cd clase5/
+ls -l
+chmod 700 texto1.txt 
+ls -l
+chmod 600 texto1.txt 
+ls -l
+chmod 610 texto1.txt 
+ls -l
+chmod 601 texto1.txt 
+ls -l
+chmod g+r texto1.txt 
+ls -l
+echo Mi primer script
+echo Funciono ok
+cat << FIN > script1
+pwd
+ls -l
+echo Mi primer script
+echo Funciono OK
+FIN
+
+ls -l
+cat script1 
+bash script1 
+vim script2.sh
+ls -l
+cat script2.sh 
+chmod 764 script2.sh 
+ls -l
+./script2.sh 
+ls -l
+chmod 666 script2.sh 
+ls -l
+./script2.sh 
+chmod 764 script2.sh 
+cd ..
+pwd
+ssh-keygen -t ed25519
+ls -l
+ls -la
+ls -la .ssh/
+cat .ssh/id_ed25519.pub 
+pwd
+ls -l
+cd repogit/
+ls -l
+git clone git@github.com:AxelBanez/TP_Ayso_114_Banez_Axel.git
+ls -l
+cd TP_Ayso_114_Banez_Axel/
+ls -l
+cat README.md 
+car /etc/os-release 
+cat /etc/os-release 
+man grep
+grep -i Home_url /etc/os-release
+grep -i Home_url /etc/os-release > datos_url.txt
+ls -l
+git status 
+git add .
+git status 
+git commit -m "Subo el archivo datos_url"
+git status
+git push
+cd ..
+ls -l
+pwd
+exit
+ls -l
+cd repogit/
+ls
+ls -l
+cd TP_Ayso_114_Banez_Axel/
+ls -l
+pwd
+cd .
+cd ..
+pwd
+ls
+mv TP_Ayso_114_Banez_Axel/ TP_AySO_Banez_Axel
+ls -l
+ls
+ls -la
+cd TP_AySO_Banez_Axel/
+ls -la
+ls -la .ssh/
+cd ..
+ls -la .ssh/
+ls -la
+cat .ssh/id_ed25519.pub
+pwd
+ls -l
+ls
+ls -l
+pwd
+cd repogit/
+ls -l
+cd TP_AySO_Banez_Axel/
+pwd
+cat /etc/os-release
+man grep
+grep -i HOME_URL /etc/os-release
+ls -l
+cat datos_url.txt 
+git status
+whoami
+echo "Usuario=$(whoami)" > datos_usuario.txt
+ls -l
+cat datos_usuario.txt 
+git add .
+git commit -m "ADD: Agregado 1er ejercicio sobre datos_usuarios.txt"
+git status
+git push
+git status
+ls -l
+git pull origin main --allow-unrelated-histories
+git push origin main
+git remote set-url origin git@github.com:AxelBanez/TP_Ayso_Banez_Axel.git
+git remote -v
+git push origin main
+git remote set-url origin git@github.com:AxelBanez/TP_AySO_Banez_Axel.git
+git remote -v
+git push origin main
+git remote set-url origin git@github.com:AxelBanez/TP_AySO_Banez_Axel.git
+git remote -v
+git push origin main
+git pull origin main --rebase
+git push origin main
+ls -l
+cat datos_usuario.txt 
+grep "model name" /proc/cpuinfo | head -n1 >> 
+grep "model name" /proc/cpuinfo | head -n1 >> datos_usuario.txt
+cat datos_usuario.txt 
+git add .
+git status
+git commit -m "feat: Añadiendo informacion de CPU"
+git status
+git push
+ls -l
+cat <<EOF>> README.md
+Alumno: Axel
+Division: 114
+Turno: Turno Mañana
+EOF
+
+cat README.md 
+git add README.md datos_usuario.txt
+git status
+cat datos_usuario.txt 
+git commit -m "ADD: Añadiedo Readme"
+git push
+cat README.md 
+vim README.md 
+git add README.md
+git commit -m "Corrijo formato para que sea vea bien en github"
+git push
+vim README.md 
+cat README.md 
+vim README.md 
+git add README.md
+git commit -m "Corrijo otra vez el formato para que sea vea bien en github"
+cat README.md 
+git push
+vim README.md 
+git add README.md
+git commit -m "Corrijo de nuevo el formato para que sea vea bien en github"
+git push
+cd ..
+pwd
+ls -l
+mkdir -p {materia1,materia2}/uni{1..3}
+ls -l
+tree
+cat << EOF > script_dir.sh
+
+mkdir -p {materia1,materia2}/uni{1..3}
+
+EOF
+
+ls -l
+cat script_dir.sh 
+cat mi_historial.txt 
+clear
+ls -l
+cat script_dir.sh 
+git add .
+cd repogit/
+ls -l
+cd TP_AySO_Banez_Axel/
+ls -l
+cat << EOF > script_dir.sh
+
+mkdir -p {materia1,materia2}/uni{1..3}
+
+EOF
+
+ls -l
+git add .
+git commit -m "ADD: Añadiendo script"
+git push
+history -a
+ls -a
+ls -l
